@@ -1,0 +1,131 @@
+\documentclass[11pt,a4paper]{article}
+
+\usepackage[margin=1.8cm]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage{hyperref}
+\usepackage{xcolor}
+\usepackage{graphicx}
+
+\definecolor{main}{RGB}{0,120,90}
+
+\titleformat{\section}
+{\large\bfseries\color{main}}
+{}{0em}{}[\titlerule]
+
+\pagestyle{empty}
+
+\newcommand{\cventry}[2]{%
+\noindent
+\begin{tabular*}{\textwidth}{@{}p{0.8\textwidth}@{\extracolsep{\fill}}r@{}}
+#1 & #2 \\
+\end{tabular*}
+}
+
+\begin{document}
+
+% HEADER
+
+\begin{center}
+
+\begin{minipage}{0.75\textwidth}
+{\LARGE \textbf{Mateja Vujsi\'{c}}} \\[6pt]
+Senior Python Backend Engineer \\[6pt]
+
++381 66 375 065 \quad - \quad
+\href{mailto:mateja.vujsic@gmail.com}{mateja.vujsic@gmail.com} \quad - \quad
+\href{https://linkedin.com/in/mateja-vujsic-272ba82a5}{LinkedIn} \quad - \quad
+\href{https://github.com/mVujsic}{GitHub}
+
+\end{minipage}
+\hfill
+\begin{minipage}{0.2\textwidth}
+\includegraphics[width=2.8cm]{mateja_2_compressed.jpg}
+\end{minipage}
+
+\end{center}
+
+\vspace{6pt}
+
+% SUMMARY
+
+\section*{Summary}
+
+Backend engineer with strong experience building scalable Python systems and production backend services.
+Focused on backend architecture, distributed job processing, and cloud infrastructure.
+Experienced in leading engineering teams and delivering reliable platforms.
+
+% EXPERIENCE
+
+\section*{Experience}
+
+\cventry{\textbf{Senior Software Developer / Team Lead} - \href{https://rbt.rs/}{Red-Black Tree D.O.O.}}{2022 - Present}%
+\begin{itemize}[leftmargin=*,itemsep=2pt,topsep=0pt,partopsep=0pt,parsep=0pt]
+\item Design and develop backend systems in Python using Flask, PostgreSQL, Redis, and AWS
+\item Lead a Scrum team of 7 engineers and coordinate delivery with product and engineering stakeholders
+\item Architect distributed job processing pipelines using Redis and RQ workers
+\item Build and maintain REST APIs for production platforms
+\item Improve system reliability through monitoring, logging, and DevOps automation
+\item Mentor engineers and contribute to architectural decisions
+\end{itemize}
+
+\vspace{4pt}
+
+\cventry{\textbf{Python Developer (Freelance)} - \href{https://astora.rs/}{Astora Technologies D.O.O.}}{2021 - 2022}%
+\begin{itemize}[leftmargin=*,itemsep=2pt,topsep=0pt,partopsep=0pt,parsep=0pt]
+\item Developed automation tools using Selenium and reverse engineered APIs
+\item Built dashboards and CMS systems for data visualization
+\item Implemented asynchronous Python services to improve scalability
+\item Integrated external APIs including Facebook GraphQL and Google Analytics
+\item Worked with Flask, Django, Quart, Celery, RQ2 and PyQt5
+\end{itemize}
+
+\vspace{4pt}
+
+\cventry{\textbf{C\#/PLC Developer} - \href{https://www.tim-ing.com/rs/}{TIM-ING Centar}}{2021}%
+\begin{itemize}[leftmargin=*,itemsep=2pt,topsep=0pt,partopsep=0pt,parsep=0pt]
+\item Developed WPF C\# application using Kinect 2 SDK and OpenCV for video processing
+\item Maintained PLC control logic for a 3D industrial bending machine
+\end{itemize}
+
+% SKILLS
+
+\section*{Technical Skills}
+
+\textbf{Languages:} Python, Java, C\#, Scala
+
+\textbf{Backend:} Flask, Django, REST APIs, Distributed Workers, RQ, Celery
+
+\textbf{Infrastructure:} Docker, AWS, Linux, Bash
+
+\textbf{Databases:} PostgreSQL, MySQL, SQLite, Redis
+
+\textbf{Tools:} Git, Jira, Trello, PyCharm
+
+% EDUCATION
+
+\section*{Education}
+
+\cventry{\textbf{Master's Degree - Electrical Engineering} - Faculty of Engineering, University of Kragujevac}{2023 - Present}
+
+\vspace{4pt}
+
+\cventry{\textbf{Bachelor's Degree - Electrical Engineering and Computer Science} - Faculty of Engineering, University of Kragujevac}{2017 - 2022}
+
+Bachelor thesis: Slip Control on a 3D Three-Roll Bending Machine
+
+% LANGUAGES
+
+\section*{Languages}
+
+English - C1 \\
+German - A1
+
+% INTERESTS
+
+\section*{Interests}
+
+Books, motorcycle riding, 3D modeling (SolidWorks), microcontroller programming
+
+\end{document}
